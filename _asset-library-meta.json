@@ -1,0 +1,14 @@
+{
+  "api_versions": {
+    "v1": {
+      "url": "_v1/asset-index.json",
+      "hash": "SHA256:7e38287e7cbb4641e709237487376702281803d7e4132a42ea9982ca9c72a88d"
+    }
+  },
+  "name": "Stylized Shader",
+  "contact": {
+    "name": "Bhrigu Bhattacharya",
+    "url": "https://github.com/podo5/Stylized-Shader-Assets",
+    "email": "bhrigubhattacharya@gmail.com"
+  }
+}

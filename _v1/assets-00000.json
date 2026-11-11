@@ -1,0 +1,5574 @@
+{
+  "asset_count": 13,
+  "file_count": 1,
+  "assets": [
+    {
+      "name": "Cel Shading",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/cel-shading.webp",
+        "hash": "SHA256:8008e3e9ce29c3984d59ef44b4f58d7d2b43d745314234cdf4996b282250e251"
+      },
+      "meta": {
+        "catalog_id": "f3d3d075-10ca-5703-9550-d2d02bda4a29",
+        "tags": [
+          "Cel Shading",
+          "Toon",
+          "Stylized",
+          "Shader"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "A cel shading node group for stylized lighting.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Custom Tone Cel Shading",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/custom-tone-cel-shading.webp",
+        "hash": "SHA256:8c3bc66b6949bd170278382484b60b6630deaee0eee05c8f660dcf7579237a71"
+      },
+      "meta": {
+        "catalog_id": "f3d3d075-10ca-5703-9550-d2d02bda4a29",
+        "tags": [
+          "Cel Shading",
+          "Custom Tone",
+          "Toon",
+          "Color Control"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Cel shading with user-adjustable shadow, midtone, and highlight colours.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "highlight"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "middle_tone_Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "shadow"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "middle_tone"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Custom Tone Halftone",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/custom-tone-halftone.webp",
+        "hash": "SHA256:7d93bbc29d0564794de63c260f5b016ab6f715d40ba9752f7b3b6355a92d9e44"
+      },
+      "meta": {
+        "catalog_id": "6c667192-139d-508b-9feb-0c95f3af388d",
+        "tags": [
+          "Halftone",
+          "Custom Tone",
+          "Color Control"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Halftone shading with user-adjustable shadow, midtone, and highlight colours.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "middle_tone"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 22.799999237060547
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of Voronoi layers to sum"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Randomness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "highlight"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "shadow"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_11",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Custom Tone Hatching",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/custom-tone-hatching.webp",
+        "hash": "SHA256:7d93bbc29d0564794de63c260f5b016ab6f715d40ba9752f7b3b6355a92d9e44"
+      },
+      "meta": {
+        "catalog_id": "44501636-c4dd-5df8-99a6-967ae635f97d",
+        "tags": [
+          "Hatching",
+          "Custom Tone",
+          "Color Control"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Hatching shading with user-adjustable shadow, midtone, and highlight colours.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "highlight"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Overall texture scale"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 12.999998092651367
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Distortion"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Amount of distortion of the wave"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Phase Offset"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Position of the wave along the Bands Direction.\nThis can be used as an input for more control over the distortion"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 2.1499998569488525
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.15000000596046448
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "shadow"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "middle_tone"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Custom Tone Watercolor",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/custom-tone-watercolor.webp",
+        "hash": "SHA256:7246d05e65c97803693ad71f9383b4d858444ec1c107d1987720838d43a8b9a6"
+      },
+      "meta": {
+        "catalog_id": "0efb7ca2-37c3-579b-b9bb-c367f88c54be",
+        "tags": [
+          "Watercolor",
+          "Custom Tone",
+          "Color Control"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Watercolor shading with user-adjustable shadow, midtone, and highlight colours.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "highlight"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 5.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of Voronoi layers to sum"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Roughness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The influence of a Voronoi layer relative to that of the previous layer"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Factor"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Amount of mixing between the A and B inputs"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.699999988079071
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "shadow"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.045185573399066925,
+                          0.014443810097873211,
+                          0.004024714231491089,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "middle_tone"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.6795564293861389,
+                          0.6795564293861389,
+                          0.2874460220336914,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.9300000071525574
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Lacunarity"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The scale of a Voronoi layer relative to that of the previous layer"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "halftone",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/halftone.webp",
+        "hash": "SHA256:15f291f06ae01f3e4749e4f6e14189114b36a8942c2977ea896713e17323a23a"
+      },
+      "meta": {
+        "catalog_id": "6c667192-139d-508b-9feb-0c95f3af388d",
+        "tags": [
+          "Halftone",
+          "Dots",
+          "Stylized",
+          "Shader"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "A procedural halftone shading node group.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5999999046325684
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 22.799999237060547
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of Voronoi layers to sum"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Randomness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "hatching",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/hatching.webp",
+        "hash": "SHA256:4848d0555e012985d9f458ea65c6923f8de4fdd40b7675402b593d6002e70ad1"
+      },
+      "meta": {
+        "catalog_id": "44501636-c4dd-5df8-99a6-967ae635f97d",
+        "tags": [
+          "Hatching",
+          "Lines",
+          "Stylized",
+          "Shader"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "A procedural hatching shading node group.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.7999999523162842
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Overall texture scale"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 12.999998092651367
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Distortion"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Amount of distortion of the wave"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Phase Offset"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Position of the wave along the Bands Direction.\nThis can be used as an input for more control over the distortion"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 2.1499998569488525
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.15000000596046448
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light Reactive Cel Shading",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/light-reactive-cel-shading.webp",
+        "hash": "SHA256:c200115cffb7899673c2d0062944bf4c980fce94edc8e172f2779ff2d83d7d47"
+      },
+      "meta": {
+        "catalog_id": "f3d3d075-10ca-5703-9550-d2d02bda4a29",
+        "tags": [
+          "Cel Shading",
+          "Light Reactive",
+          "Toon",
+          "Lighting"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Cel shading designed to respond to the colour of the lighting.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Red light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Green light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Blue light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light Reactive Halftone",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/light-reactive-halftone.webp",
+        "hash": "SHA256:9a271064893a45493439150c1e8a973860d51616bab60ec972b750b71bd203f4"
+      },
+      "meta": {
+        "catalog_id": "6c667192-139d-508b-9feb-0c95f3af388d",
+        "tags": [
+          "Halftone",
+          "Light Reactive",
+          "Lighting"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Halftone shading designed to respond to the colour of the lighting.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 22.799999237060547
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of Voronoi layers to sum"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Randomness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_11",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Red light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_12",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Green light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_13",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Blue light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light Reactive Hatching",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/light-reactive-hatching.webp",
+        "hash": "SHA256:0b3f882976cc7ac0df86d75a7da8213d5c5f23de87b1c84df58cc5a9f5dee419"
+      },
+      "meta": {
+        "catalog_id": "44501636-c4dd-5df8-99a6-967ae635f97d",
+        "tags": [
+          "Hatching",
+          "Light Reactive",
+          "Lighting"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Hatching shading designed to respond to the colour of the lighting.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Area of Effect"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5499999523162842
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Weightage"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second floating number input"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.15000000596046448
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Overall texture scale"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 12.999998092651367
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Distortion"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Amount of distortion of the wave"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Phase Offset"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Position of the wave along the Bands Direction.\nThis can be used as an input for more control over the distortion"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_11",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Red light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.37234097719192505
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_12",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Green light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_13",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Blue light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.7446558475494385
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light Reactive Watercolor",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/light-reactive-watercolor.webp",
+        "hash": "SHA256:fafe0873ad6b6b2f8062eeff05b75bde26a1f8b5010abb69bcf173bc8e2eb741"
+      },
+      "meta": {
+        "catalog_id": "0efb7ca2-37c3-579b-b9bb-c367f88c54be",
+        "tags": [
+          "Watercolor",
+          "Light Reactive",
+          "Lighting"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "Watercolor shading designed to respond to the colour of the lighting.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 5.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of Voronoi layers to sum"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Roughness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The influence of a Voronoi layer relative to that of the previous layer"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_10",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Red light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_11",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Green light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_12",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Blue light value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "outline",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/outline.webp",
+        "hash": "SHA256:3612e4923c40a90515602e27baf03955dfff6bbfe6a10ba8781de5b9c16171e3"
+      },
+      "meta": {
+        "catalog_id": "e66ce6a1-2259-56a2-8790-569380958df4",
+        "tags": [
+          "Outline",
+          "Ink",
+          "Linework",
+          "Stylized"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "An outline node group for stylized materials.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_1",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color of object"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Threshold"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -10000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 10000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.699999988079071
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color of outline"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the first color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.9881835579872131,
+                          0.3154401481151581,
+                          0.0,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "watercolor",
+      "id_type": "NODETREE",
+      "files": [
+        "STYLIZED_SHADER_ASSETS.blend"
+      ],
+      "bl_versions": {
+        "min": "5.3"
+      },
+      "thumbnail": {
+        "url": "STYLIZED_SHADER_ASSETS_thumbnails/Nodetree/watercolor.webp",
+        "hash": "SHA256:e5e8b0365f08f014bde0a4ead7c4963b7a44f527fb241bf999ab273b6955bd27"
+      },
+      "meta": {
+        "catalog_id": "0efb7ca2-37c3-579b-b9bb-c367f88c54be",
+        "tags": [
+          "Watercolor",
+          "Paint",
+          "Stylized",
+          "Shader"
+        ],
+        "author": "Bhrigu Bhattacharya",
+        "description": "A procedural watercolor-style shading node group.",
+        "properties": [
+          {
+            "name": "type",
+            "type": "IDP_INT",
+            "value": 0
+          },
+          {
+            "name": "properties",
+            "type": "IDP_GROUP",
+            "value": [
+              {
+                "name": "inputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_2",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Factor"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Amount of mixing between the A and B inputs"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.25
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_3",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Scale"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Scale of the base noise octave"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": -1000.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1000.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 3.1500000953674316
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_4",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Detail"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "The number of noise octaves. Higher values give more detailed noise but increase render time"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 15.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 8.399999618530273
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_5",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Roughness"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Blend factor between an octave and its previous one. A value of zero corresponds to zero detail"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 15
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6629999876022339
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_6",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Hue"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Hue rotation offset, from 0 (-180\u00b0) to 1 (+180\u00b0). Note that 0 and 1 have the same result"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 1.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.5
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_7",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Saturation"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of 0 removes color from the image, making it black-and-white. A value greater than 1.0 increases saturation"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 0.6999999284744263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_8",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Value"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value shift. 0 makes the color black, 1 keeps it the same, and higher values make it brighter"
+                      },
+                      {
+                        "name": "subtype",
+                        "type": "IDP_INT",
+                        "value": 0
+                      },
+                      {
+                        "name": "min",
+                        "type": "IDP_FLOAT",
+                        "value": 0.0
+                      },
+                      {
+                        "name": "max",
+                        "type": "IDP_FLOAT",
+                        "value": 2.0
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_FLOAT",
+                        "value": 1.3000000715255737
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Socket_9",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "color"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": "Value of the second color input"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "IDP_ARRAY",
+                        "value": [
+                          0.5,
+                          0.5,
+                          0.5,
+                          1.0
+                        ],
+                        "itemtype": "IDP_FLOAT"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "panels",
+                "type": "IDP_GROUP",
+                "value": []
+              },
+              {
+                "name": "outputs",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Result",
+                    "type": "IDP_STRING",
+                    "value": "NodeSocketColor"
+                  }
+                ]
+              },
+              {
+                "name": "output_sockets",
+                "type": "IDP_GROUP",
+                "value": [
+                  {
+                    "name": "Socket_0",
+                    "type": "IDP_GROUP",
+                    "value": [
+                      {
+                        "name": "name",
+                        "type": "IDP_STRING",
+                        "value": "Result"
+                      },
+                      {
+                        "name": "type",
+                        "type": "IDP_INT",
+                        "value": 2
+                      },
+                      {
+                        "name": "description",
+                        "type": "IDP_STRING",
+                        "value": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "STYLIZED_SHADER_ASSETS.blend",
+      "size_in_bytes": 1342528,
+      "hash": "SHA256:241bc20f3c039a775d3c5a80c7910b6ae83c07294be8cc4900822bd8c2a3158a",
+      "blender_version": "5.3.31"
+    }
+  ]
+}
