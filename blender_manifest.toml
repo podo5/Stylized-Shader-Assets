@@ -1,0 +1,20 @@
+
+schema_version = "1.0.0"
+
+id = "stylized_shader"
+version = "1.0.0"
+
+name = "Stylized Shader"
+tagline = "Procedural stylized shading assets"
+maintainer = "Bhrigu Bhattacharya"
+
+type = "asset-library"
+
+blender_version_min = "5.3.0"
+
+license = [
+    "SPDX:CC0-1.0",
+]
+
+[asset_library]
+remote_url = "https://REPLACE-WITH-HOSTED-LIBRARY-URL/"

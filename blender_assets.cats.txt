@@ -1,0 +1,11 @@
+# This is an asset catalog definition file for Blender.
+#
+# UUID:Catalog Path:Simple Name
+
+VERSION 1
+
+0efb7ca2-37c3-579b-b9bb-c367f88c54be:04 - Watercolor:04 - Watercolor
+44501636-c4dd-5df8-99a6-967ae635f97d:03 - Hatching:03 - Hatching
+6c667192-139d-508b-9feb-0c95f3af388d:02 - Halftone:02 - Halftone
+e66ce6a1-2259-56a2-8790-569380958df4:05 - Outlines:05 - Outlines
+f3d3d075-10ca-5703-9550-d2d02bda4a29:01 - Cel Shading:01 - Cel Shading
