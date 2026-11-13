@@ -25,6 +25,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "A cel shading node group for stylized lighting.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -308,6 +309,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Cel shading with user-adjustable shadow, midtone, and highlight colours.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -572,6 +574,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Halftone shading with user-adjustable shadow, midtone, and highlight colours.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -1000,6 +1003,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Hatching shading with user-adjustable shadow, midtone, and highlight colours.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -1428,6 +1432,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Watercolor shading with user-adjustable shadow, midtone, and highlight colours.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -1835,7 +1840,7 @@
       }
     },
     {
-      "name": "halftone",
+      "name": "Halftone",
       "id_type": "NODETREE",
       "files": [
         "STYLIZED_SHADER_ASSETS.blend"
@@ -1857,6 +1862,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "A procedural halftone shading node group.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -2323,7 +2329,7 @@
       }
     },
     {
-      "name": "hatching",
+      "name": "Hatching",
       "id_type": "NODETREE",
       "files": [
         "STYLIZED_SHADER_ASSETS.blend"
@@ -2345,6 +2351,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "A procedural hatching shading node group.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -2833,6 +2840,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Cel shading designed to respond to the colour of the lighting.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -3238,6 +3246,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Halftone shading designed to respond to the colour of the lighting.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -3848,6 +3857,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Hatching shading designed to respond to the colour of the lighting.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -4458,6 +4468,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "Watercolor shading designed to respond to the colour of the lighting.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -4987,6 +4998,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "An outline node group for stylized materials.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -5157,7 +5169,7 @@
       }
     },
     {
-      "name": "watercolor",
+      "name": "Watercolor",
       "id_type": "NODETREE",
       "files": [
         "STYLIZED_SHADER_ASSETS.blend"
@@ -5179,6 +5191,7 @@
         ],
         "author": "Bhrigu Bhattacharya",
         "description": "A procedural watercolor-style shading node group.",
+        "license": "CC0 - Public Domain",
         "properties": [
           {
             "name": "type",
@@ -5566,8 +5579,8 @@
   "files": [
     {
       "path": "STYLIZED_SHADER_ASSETS.blend",
-      "size_in_bytes": 1342528,
-      "hash": "SHA256:241bc20f3c039a775d3c5a80c7910b6ae83c07294be8cc4900822bd8c2a3158a",
+      "size_in_bytes": 1399473,
+      "hash": "SHA256:481b332a5a06634ae9b62af1f16a888a4a3d80ba16469e30d668b42c5708a1b3",
       "blender_version": "5.3.31"
     }
   ]

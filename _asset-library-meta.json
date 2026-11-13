@@ -2,7 +2,7 @@
   "api_versions": {
     "v1": {
       "url": "_v1/asset-index.json",
-      "hash": "SHA256:7e38287e7cbb4641e709237487376702281803d7e4132a42ea9982ca9c72a88d"
+      "hash": "SHA256:7fa7d4333bd5b51cab977c4c3c1e7590a40d2293874718474ddeb45f80e3204a"
     }
   },
   "name": "Stylized Shader",

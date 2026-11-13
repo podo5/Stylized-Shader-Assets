@@ -1,49 +1,49 @@
 {
   "schema_version": "1.0.0",
-  "asset_size_bytes": 1342528,
+  "asset_size_bytes": 1399473,
   "asset_count": 13,
   "file_count": 1,
   "pages": [
     {
       "url": "_v1/assets-00000.json",
-      "hash": "SHA256:0d280b53f212b053e21aa3ed16928f05f76ed71057016b0931bd6fb403e42c30"
+      "hash": "SHA256:8e3dad30a3a14356c768890effa0b9550228364133f0a19e0e42dcefbadd2815"
     }
   ],
   "catalogs": [
     {
-      "path": "01 - Cel Shading",
+      "path": "Shading/Stylized/Cel Shading",
       "uuids": [
         "f3d3d075-10ca-5703-9550-d2d02bda4a29"
       ],
-      "simple_name": "01 - Cel Shading"
+      "simple_name": "Cel Shading"
     },
     {
-      "path": "02 - Halftone",
+      "path": "Shading/Stylized/Halftone",
       "uuids": [
         "6c667192-139d-508b-9feb-0c95f3af388d"
       ],
-      "simple_name": "02 - Halftone"
+      "simple_name": "Halftone"
     },
     {
-      "path": "03 - Hatching",
+      "path": "Shading/Stylized/Hatching",
       "uuids": [
         "44501636-c4dd-5df8-99a6-967ae635f97d"
       ],
-      "simple_name": "03 - Hatching"
+      "simple_name": "Hatching"
     },
     {
-      "path": "04 - Watercolor",
-      "uuids": [
-        "0efb7ca2-37c3-579b-b9bb-c367f88c54be"
-      ],
-      "simple_name": "04 - Watercolor"
-    },
-    {
-      "path": "05 - Outlines",
+      "path": "Shading/Stylized/Outlines",
       "uuids": [
         "e66ce6a1-2259-56a2-8790-569380958df4"
       ],
-      "simple_name": "05 - Outlines"
+      "simple_name": "Outlines"
+    },
+    {
+      "path": "Shading/Stylized/Watercolor",
+      "uuids": [
+        "0efb7ca2-37c3-579b-b9bb-c367f88c54be"
+      ],
+      "simple_name": "Watercolor"
     }
   ]
 }

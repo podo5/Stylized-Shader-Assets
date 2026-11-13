@@ -17,4 +17,4 @@ license = [
 ]
 
 [asset_library]
-remote_url = "https://REPLACE-WITH-HOSTED-LIBRARY-URL/"
+remote_url = "https://podo5.github.io/Stylized-Shader-Assets/"
